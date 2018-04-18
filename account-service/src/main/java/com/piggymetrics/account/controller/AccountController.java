@@ -36,4 +36,9 @@ public class AccountController {
 	public Account createNewAccount(@Valid @RequestBody User user) {
 		return accountService.create(user);
 	}
+
+	@RequestMapping(path = "/health-check", method = RequestMethod.GET)
+	public Boolean checkHealth() {
+		return accountService.checkHealth();
+	}
 }

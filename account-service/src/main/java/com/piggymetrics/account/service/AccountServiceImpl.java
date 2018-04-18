@@ -89,4 +89,8 @@ public class AccountServiceImpl implements AccountService {
 
 		statisticsClient.updateStatistics(name, account);
 	}
+
+	public Boolean checkHealth() {
+		return repository.count()>0;
+	}
 }
