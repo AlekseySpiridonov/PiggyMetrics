@@ -25,7 +25,7 @@ fi
 ) &
 
 echo "start mongodb without auth"
-chown -R mongodb /data/db
+chown -R root /data/db
 gosu mongodb mongod "$@"
 
 echo "restarting with auth on"
