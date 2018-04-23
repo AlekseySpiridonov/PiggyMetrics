@@ -24,19 +24,19 @@ zuul:
         sensitiveHeaders:
 
     account-service:
-        path: /accounts/**
+        path: /account/**
         serviceId: account-service
         stripPrefix: false
         sensitiveHeaders:
 
     statistics-service:
-        path: /statistics/**
+        path: /statistic/**
         serviceId: statistics-service
         stripPrefix: false
         sensitiveHeaders:
 
     notification-service:
-        path: /notifications/**
+        path: /notification/**
         serviceId: notification-service
         stripPrefix: false
         sensitiveHeaders:
